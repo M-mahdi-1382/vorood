@@ -1,0 +1,185 @@
+body {
+  background: radial-gradient(ellipse at center, #19100a 0%, #000 100%);
+  margin: 0;
+  font-family: "Vazirmatn", Tahoma, Arial, sans-serif;
+  min-height: 100vh;
+  color: #fff;
+  direction: rtl;
+}
+
+.login-container {
+  max-width: 400px;
+  margin: 32px auto 0 auto;
+  background: rgba(12, 5, 2, 0.95);
+  border-radius: 22px;
+  padding: 32px 18px 20px 18px;
+  box-shadow: 0 2px 25px #000;
+  position: relative;
+}
+
+.login-form .form-group {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+
+.input {
+  width: 100%;
+  border: 2px solid #38302a;
+  background: #18100a;
+  color: #fff;
+  padding: 15px 14px;
+  font-size: 15px;
+  border-radius: 15px;
+  outline: none;
+  box-sizing: border-box;
+  font-family: inherit;
+  transition: border 0.2s;
+}
+.input:focus {
+  border-color: #944a07;
+}
+
+.input-icon {
+  position: relative;
+}
+.input-eye {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6c635c;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.captcha-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.captcha-img img {
+  width: 110px;
+  height: 50px;
+  border-radius: 12px;
+  background: #e3e3e3;
+  object-fit: cover;
+  border: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.captcha-input {
+  flex: 1;
+}
+
+.login-btn {
+  width: 100%;
+  background: #863d06;
+  color: #fff;
+  font-size: 21px;
+  font-weight: bold;
+  border: none;
+  border-radius: 13px;
+  padding: 21px 0 18px 0;
+  margin-top: 26px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: opacity 0.17s;
+}
+.login-btn:hover {
+  opacity: 0.82;
+}
+
+.forgot-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 0;
+  margin-bottom: 22px;
+}
+
+.forgot-icon {
+  font-size: 17px;
+  margin-left: 5px;
+  color: #aaa;
+}
+
+.forgot-link {
+  font-size: 16px;
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.forgot-link:hover {
+  color: #eee;
+}
+
+.signup-btn {
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  color: #ff8800;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 19px 0 10px 0;
+  padding: 17px 0 15px 0;
+  border-radius: 13px;
+  cursor: pointer;
+  transition: color 0.18s;
+  text-align: center;
+}
+.signup-btn:hover {
+  color: #fff1d0;
+  background: #6d2d03;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 8px;
+  left: 0;
+  right: 0;
+  background: none;
+  padding: 15px 0 10px 0;
+  font-size: 18px;
+  letter-spacing: 0.6px;
+  color: #fff;
+  gap: 12px;
+}
+
+.footer-nav a {
+  color: #c3c3c3;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.18s;
+}
+.footer-nav a:hover {
+  color: #ffa257;
+}
+
+.footer-nav span {
+  color: #fff;
+  font-size: 21px;
+  padding: 0 4px;
+}
+
+/* Responsive */
+@media (max-width: 520px) {
+  .login-container {
+    max-width: 92vw;
+    padding: 19px 5vw;
+  }
+  .captcha-img img {
+    width: 91px;
+    height: 38px;
+  }
+}

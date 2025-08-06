@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ورود کاربر</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <form class="login-form">
+        <div class="form-group">
+          <label for="username" class="label"
+            >نام کاربری یا پست الکترونیک یا شماره موبایل</label
+          >
+          <input type="text" id="username" class="input" placeholder="" />
+        </div>
+        <div class="form-group">
+          <label for="password" class="label">رمز عبور شما</label>
+          <div class="input-icon">
+            <input type="password" id="password" class="input" placeholder="" />
+            <span class="input-eye">&#128065;</span>
+          </div>
+        </div>
+        <div class="form-group captcha-group">
+          <div class="captcha-img"></div>
+          <input
+            type="text"
+            class="input captcha-input"
+            placeholder="کد مقابل را وارد کنید"
+          />
+        </div>
+        <button type="submit" class="login-btn">ورود به پنل کاربری</button>
+        <div class="forgot-row">
+          <span class="forgot-icon">&#128274;</span>
+          <a href="#" class="forgot-link">فراموشی رمز عبور</a>
+        </div>
+      </form>
+      <button class="signup-btn">عضویت در زر فیلم</button>
+    </div>
+    <footer class="footer-nav">
+      <a href="#">صفحه نخست</a>
+      <span>•</span>
+      <a href="#">فیلم ها</a>
+      <span>•</span>
+      <a href="#">سریال ها</a>
+    </footer>
+  </body>
+</html>
